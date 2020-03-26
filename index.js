@@ -32,8 +32,8 @@ var loadEvents = (dir = bot.config.events) => {
         var eventName = file.split('.')[0];
         bot.on(eventName, event.bind(null, bot));
         data.push([eventName, file, success]);
-        console.log(table(data));
     });
+    console.log(table(data));
     console.log(chalk.yellow("╚═════════════════════════════════════════════════════════════════╝"));
 };
 

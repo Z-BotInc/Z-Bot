@@ -6,7 +6,7 @@ const Discord = require('discord.js');
  * @param {Discord.Client} bot
  * @param {Discord.Message} message
  */
-module.exports = (bot, message) => {
+module.exports = async (bot, message) => {
     var prefix = bot.config.prefix;
     var args = message.content.slice(prefix.length).trim().split(/ +/g);
     var cmd = args.shift().toLowerCase();
