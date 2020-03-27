@@ -22,7 +22,7 @@ module.exports.run = async (bot, message, args, db) => {
         if (bot.commands.has(command)) cmd = bot.commands.get(command);
         else if (bot.aliases.has(command)) cmd = bot.commands.get(bot.aliases.get(command));
 
-        if (!cmd) message.channel.send(`- Commande inexistante. Veuillez faire ${bot.config.prefix}help pour accéder à la liste des commandes disponibles.`, { code: "diff" });
+        if (!cmd) return message.channel.send(`- Commande inexistante. Veuillez faire ${bot.config.prefix}help pour accéder à la liste des commandes disponibles.`, { code: "diff" });
         command = cmd.help;
 
         embed
