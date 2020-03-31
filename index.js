@@ -15,6 +15,9 @@ const {table} = require('table');
 bot.config = config;
 bot.database = db;
 ["commands", "aliases"].forEach(x => bot[x] = new Collection());
+db.defaults({
+    
+})
 
 /**
  * Load events

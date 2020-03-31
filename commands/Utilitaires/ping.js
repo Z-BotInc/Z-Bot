@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const low = require('lowdb');
 
 /**
- * Serverinfo command
+ * Ping command
  * 
  * @param {Discord.Client} bot
  * @param {Discord.Message} message
